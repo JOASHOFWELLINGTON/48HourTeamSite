@@ -11,6 +11,17 @@
     height: 200px;
     background: #aaa;
   }
+	.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+}
+
+.responsive-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
   </style>
 </head>
 <body>
@@ -203,10 +214,14 @@ The communities love free entry applications.https://www.48hours.co.nz/register/
 	      
 	<img src="https://raw.githubusercontent.com/JOASHOFWELLINGTON/48HourTeamSite/main/images/93B%20rakau%20rd%20March%2030%20Poster.jpg" class="mx-auto d-block" style="width:100%"> 
 
-	<video width="400" controls>
-  	<source src="https://github.com/JOASHOFWELLINGTON/48HourTeamSite/raw/main/videos/Hammers_Intro.mp4" type="video/mp4">
-  	Your browser does not support HTML video.
-	</video>
+	<div class="video-container">
+  	<video class="responsive-video" controls>
+    	<source src="mov_bbb.mp4" type="video/mp4">
+    	<source src="mov_bbb.ogg" type="video/ogg">
+   	 Your browser does not support HTML video.
+  	</video>
+	</div>
+
 	
 	<p>29/03/2024</p>
       	<p>Ok so we are in pre production mode, lets get going baby!</p>
